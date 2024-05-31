@@ -1,0 +1,24 @@
+import random
+
+def greet_in_random_languages():
+    greetings = {
+        "English": "Hello",
+        "Spanish": "Hola",
+        "French": "Bonjour",
+        "German": "Hallo",
+        "Italian": "Ciao",
+        "Portuguese": "Olá",
+        "Russian": "Здравствуйте",
+        "Chinese": "你好",
+        "Japanese": "こんにちは",
+        "Korean": "안녕하세요"
+    }
+
+    # Choose 5 random languages from the dictionary
+    random_languages = random.sample(list(greetings.keys()), 5)
+    
+    for language in random_languages:
+        print(f"{greetings[language]}! ({language})")
+
+if __name__ == "__main__":
+    greet_in_random_languages()
